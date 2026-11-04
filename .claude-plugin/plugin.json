@@ -1,0 +1,21 @@
+{
+  "name": "aim-higher",
+  "version": "0.1.0",
+  "description": "Raises the ceiling on a task before work starts. Implements the four kinds of ambition from Felix Rieseberg's essay on being more ambitious with models, with a guardrail separating an unreasonable target from an unreasonable claim, paste-ready prompts by domain, and crews and outside judges that can refuse.",
+  "author": "Dina Farhat",
+  "repository": "https://github.com/dinaf2026-web/aim-higher",
+  "homepage": "https://github.com/dinaf2026-web/aim-higher",
+  "license": "MIT",
+  "keywords": [
+    "ambition",
+    "prompting",
+    "altitude",
+    "depth",
+    "range",
+    "verification",
+    "outside-judge",
+    "red-team",
+    "provenance",
+    "skill"
+  ]
+}

@@ -1,0 +1,4 @@
+* text=auto eol=lf
+LICENSE -text
+LICENSE-*.txt -text
+NOTICES.md -text
