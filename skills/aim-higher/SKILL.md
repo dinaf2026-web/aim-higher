@@ -1,6 +1,6 @@
 ---
 name: aim-higher
-description: "Raises the ceiling on a task before work starts, using the four kinds of ambition (speed, altitude, depth, range) from Felix Rieseberg's 13 October 2026 essay on being more ambitious with models. Use whenever someone commissions substantial work and the ask is pitched at the literal task rather than the outcome behind it: a tracker, report, letter, analysis, reconciliation, listing, plan, build or fix. Also use it on aim higher, be more ambitious, think bigger, what would an expert do, go deeper, am I asking for the right thing, or /aim-higher. Use it before a multi-session build, a forensic or financial analysis, or anything producing a recurring deliverable. Use it on correspondence and filings too: an email, letter, demand, motion or opposition is a decision document, not creative work. Do NOT use it on fiction or voice work, on a one-step factual answer, or on a task already scoped with instructions to execute as written."
+description: "Raises the ceiling on a task before work starts, using the four kinds of ambition (speed, altitude, depth, range) from Felix Rieseberg's 13 October 2026 essay on being more ambitious with models. Use whenever someone commissions substantial work and the ask is pitched at the literal task rather than the outcome behind it: a tracker, report, letter, analysis, reconciliation, listing, plan, build or fix. Also use it on aim higher, be more ambitious, think bigger, what would an expert do, go deeper, am I asking for the right thing, or /aim-higher. Use it before a multi-session build, a forensic or financial analysis, or anything producing a recurring deliverable. Use it on correspondence and filings too: an email, letter, demand, motion or opposition is a decision document, not creative work. Do NOT use it on fiction or voice work, on a one-step factual answer, on a task already scoped with instructions to execute as written, or on anything a handful of tool calls settles: one file, one function, one pattern, one email. Size the task before loading the method, and on a small task the whole skill is one line of altitude and a named judge."
 ---
 
 # Aim Higher
@@ -15,6 +15,22 @@ Felix Rieseberg's claim is that the model is no longer the limit, the size of th
 | **Range** | Bring in other fields and their instruments | Lever 3 |
 
 This is not a prompt pack. A pasted prompt is a one-off. What changes results is that the three questions get asked before work starts, every time, and answered against what is actually there rather than what is assumed.
+
+## Size the task first, and say which size you picked
+
+This section is first for a reason. In the previous version the small-task limit was one sentence at the very bottom, after all three levers, so by the time you reached it the whole method had already been loaded and started. That is a real failure mode and it was observed: a change to one pattern table in one script was run with eight gates, four control documents and four separate verification passes, while the person waiting asked twice why it was taking so long. Two of those pieces earned their cost. The rest was ritual.
+
+Three sizes. Decide before reading any further, state the size in one line where the person asking can see it, and run only that size's work.
+
+| Size | What it looks like | What this skill is allowed to cost |
+|---|---|---|
+| **Small** | One file, one function, one pattern, one email, one lookup. A handful of tool calls settles it. | One line naming the raised target, one named judge, nothing else. No ledger, no controls, no sweep. Then do the work. |
+| **Medium** | A deliverable with several parts, a document going to someone outside, a data edit, a build inside one session. | Altitude's three rungs plus a named judge. Add a gate ledger only where a wrong answer is expensive to undo. Three gates at most. |
+| **Full** | A multi-session build, a forensic or financial analysis, a recurring deliverable, a filing, anything read by someone who can say no. | The whole sequence below, the crew, the judges, the sweep. |
+
+**Watch the overhead, not the ambition.** Raising a target costs nothing. What costs time is the apparatus: a gate ledger, control fixtures, a sampling sweep, mirroring a rule into several files, a lint pass and a status pass and an approve pass where one test run would have proved the same thing. At Small, all of that is forbidden. At Medium, each piece needs a reason you can state in a sentence. **If you cannot say in one sentence what a piece of apparatus would catch, it does not run.**
+
+The one exception worth naming: a negative check still needs its positive control at any size, because an absence proved by a broken test is the failure this whole skill is supposed to prevent.
 
 ## The guardrail that comes first
 
@@ -105,7 +121,7 @@ Paste-ready wording per domain is in `references/prompts.md`.
 5. Hand off to whatever review and completion discipline the project uses.
 6. Report against the target, with the four closing lines.
 
-Do not run all of this on a small task. One or two rungs and a named judge is the whole of it on a half-hour job. The full sequence earns its cost on a multi-session build, a forensic analysis, a recurring deliverable, or anything read by someone who can say no.
+That sequence is the Full size only. Go back to the sizing table at the top of this file before running any of it, and if the task is Small, the whole of this skill is one line of altitude and one named judge. The most common failure of this skill is not aiming too low. It is spending someone's time on apparatus a smaller size would have skipped.
 
 ## What good looks like
 
